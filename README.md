@@ -80,6 +80,36 @@ bash scripts/run_pipeline.sh      # generates data, builds the warehouse, builds
 streamlit run app/streamlit_app.py
 ```
 
+## Deploy to Streamlit Community Cloud
+
+The warehouse (`warehouse.duckdb`) and vector index (`rag/vectorstore/`) are
+committed to the repo as a prebuilt demo snapshot specifically so this works
+without a build step -- Streamlit Community Cloud only runs `pip install`,
+it can't run `dbt run` or `rag/ingest.py` for you.
+
+1. Push this repo to GitHub (already done if you're reading this from
+   `github.com/.../claims-policy-assistant`).
+2. Go to [share.streamlit.io](https://share.streamlit.io) → **New app** →
+   pick this repo/branch, and set the main file path to:
+   ```
+   app/streamlit_app.py
+   ```
+3. Before deploying, open **Advanced settings → Secrets** and paste (TOML
+   format -- pick one provider block, matching `.env.example`):
+   ```toml
+   LLM_PROVIDER = "groq"
+   GROQ_API_KEY = "your-real-key-here"
+   GROQ_MODEL = "openai/gpt-oss-120b"
+   ```
+4. Deploy. `app/streamlit_app.py` bridges `st.secrets` into environment
+   variables at startup, so `rag/llm.py` picks them up exactly the way it
+   does locally from `.env` -- no code differs between local and deployed.
+
+To refresh the deployed data later: regenerate locally with
+`bash scripts/run_pipeline.sh`, commit the updated `warehouse.duckdb` and
+`rag/vectorstore/` files, and push -- Streamlit Cloud redeploys automatically
+on push to the connected branch.
+
 Without an API key set, the app still runs — it shows the retrieved
 structured record + policy excerpts directly instead of a generated answer,
 so you can verify retrieval quality independent of the LLM.

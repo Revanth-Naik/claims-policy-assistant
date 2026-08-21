@@ -15,6 +15,17 @@ RAG_DIR = os.path.join(ROOT, "rag")
 if RAG_DIR not in sys.path:
     sys.path.insert(0, RAG_DIR)
 
+# Streamlit Community Cloud injects secrets via st.secrets (set in the app's
+# "Secrets" settings, TOML format), not a .env file. Bridge them into the
+# environment here -- before importing llm.py -- so rag/llm.py's plain
+# os.getenv() calls work unchanged both locally (.env) and when deployed
+# (st.secrets). Locally, with no secrets.toml configured, this just no-ops.
+try:
+    for _key, _value in st.secrets.items():
+        os.environ.setdefault(_key, str(_value))
+except Exception:
+    pass
+
 from llm import SYSTEM_PROMPT, build_prompt, get_llm  # noqa: E402
 from retriever import HybridRetriever  # noqa: E402
 

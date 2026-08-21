@@ -2,9 +2,17 @@
 __pycache__/
 *.pyc
 .env
-warehouse.duckdb
 dbt_project/target/
 dbt_project/logs/
 dbt_project/dbt_packages/
-rag/vectorstore/
 .DS_Store
+
+# warehouse.duckdb and rag/vectorstore/ are intentionally NOT ignored: they're
+# committed as a prebuilt demo snapshot so Streamlit Community Cloud (which
+# only runs `pip install`, not the dbt/RAG pipeline) has data to serve
+# immediately. The generator is seeded, but several date fields are relative
+# to "today" at generation time, so re-running scripts/run_pipeline.sh
+# produces very similar but not byte-identical data. If you'd rather keep
+# these out of git for local-only development, re-add:
+#   warehouse.duckdb
+#   rag/vectorstore/
