@@ -1,0 +1,121 @@
+provider_id,provider_name,npi,specialty,region,network_status
+P00001,Dr. Holland,3468007229,Orthopedics,West,In-Network
+P00002,Dr. Owen,3494466574,Pediatrics,Midwest,In-Network
+P00003,Dr. Robinson,4896910858,Primary Care,Midwest,Out-of-Network
+P00004,Dr. Holland,9441715454,Radiology,Midwest,In-Network
+P00005,Douglas-Farley Clinic,4328309652,Pediatrics,Mid-Atlantic,In-Network
+P00006,Dr. Griffith,7446660993,OB/GYN,Midwest,Out-of-Network
+P00007,Dr. Cooper,3875842824,OB/GYN,Southeast,In-Network
+P00008,Dr. Davis,2482513534,OB/GYN,Mid-Atlantic,In-Network
+P00009,Dr. Fisher,5549471709,Dermatology,West,In-Network
+P00010,Dr. Carpenter,9173816846,Endocrinology,Northeast,In-Network
+P00011,Dr. Brown,2235697252,Dermatology,Midwest,In-Network
+P00012,Dr. Maxwell,7525007432,Dermatology,West,In-Network
+P00013,Dr. Johnston,2712966667,Physical Therapy,Northeast,Out-of-Network
+P00014,Dr. Reyes,0835058300,Pediatrics,Northeast,In-Network
+P00015,Dr. Sims,3354216894,Cardiology,Midwest,In-Network
+P00016,Dr. Jackson,0447898562,Orthopedics,Mid-Atlantic,Out-of-Network
+P00017,Dr. Cooper,7532603323,Pediatrics,Midwest,In-Network
+P00018,Dr. Gross,9821506489,Orthopedics,Northeast,In-Network
+P00019,Dr. Williams,0100167618,Orthopedics,Southeast,In-Network
+P00020,Wells-Hernandez Clinic,0461849926,Dermatology,Mid-Atlantic,In-Network
+P00021,Dr. Rivas,1891411739,Orthopedics,Midwest,In-Network
+P00022,Dr. Gonzalez,4835642087,Orthopedics,West,In-Network
+P00023,Dr. Lozano,7530011972,Radiology,Midwest,In-Network
+P00024,Chan Inc Clinic,1437447012,Behavioral Health,Southeast,Out-of-Network
+P00025,Dr. Sawyer,4556110022,OB/GYN,Mid-Atlantic,In-Network
+P00026,Howard-Kim Clinic,9415521667,Behavioral Health,Mid-Atlantic,In-Network
+P00027,Dr. Nelson,6762120216,Orthopedics,Northeast,In-Network
+P00028,Dr. Pruitt,7972965902,Orthopedics,Northeast,In-Network
+P00029,Dr. Webb,7167014508,Dermatology,Midwest,In-Network
+P00030,Dr. Saunders,9935889163,Endocrinology,Midwest,Out-of-Network
+P00031,Dr. Olson,6289002877,Endocrinology,Midwest,In-Network
+P00032,Dr. Booth,1753540838,Radiology,Northeast,In-Network
+P00033,Dr. Schneider,6317797177,Orthopedics,Mid-Atlantic,In-Network
+P00034,Dr. Stewart,7016608801,Orthopedics,Northeast,In-Network
+P00035,Dr. Conner,9488375503,Primary Care,Midwest,Out-of-Network
+P00036,Dr. Richard,5899757113,OB/GYN,West,In-Network
+P00037,Dr. Smith,5488510272,Cardiology,Northeast,In-Network
+P00038,Dr. Underwood,6149331637,Physical Therapy,Midwest,In-Network
+P00039,Dr. Summers,3516091779,Orthopedics,Mid-Atlantic,In-Network
+P00040,Dr. Blanchard,2708086978,Dermatology,Midwest,In-Network
+P00041,Dr. Norman,2922169958,Dermatology,West,In-Network
+P00042,Dr. Keith,6934654722,Cardiology,West,In-Network
+P00043,Dr. Gutierrez,8485833394,Cardiology,Northeast,In-Network
+P00044,Dr. Parks,2288515879,Dermatology,West,Out-of-Network
+P00045,Dr. Duncan,6846081062,Radiology,Southeast,In-Network
+P00046,Dr. Brown,0342442043,Behavioral Health,Midwest,In-Network
+P00047,"Johnson, Cervantes and Garcia Clinic",8386384066,Cardiology,Northeast,In-Network
+P00048,Dr. Butler,5800439735,Orthopedics,Northeast,In-Network
+P00049,"Payne, Morrison and Parsons Clinic",3472122816,Cardiology,Southeast,In-Network
+P00050,Dr. Williams,4842294057,Dermatology,Southeast,In-Network
+P00051,"Pineda, Williams and Mcfarland Clinic",9094798515,Orthopedics,Northeast,Out-of-Network
+P00052,Dr. Fox,2818268861,Endocrinology,Midwest,In-Network
+P00053,Walker-Lewis Clinic,5554398780,Primary Care,Northeast,Out-of-Network
+P00054,Dr. Wilson,5739930561,Orthopedics,Southeast,In-Network
+P00055,Dr. Cruz,8408588770,Pediatrics,Southeast,Out-of-Network
+P00056,Villanueva-Lee Clinic,8112880133,Endocrinology,Mid-Atlantic,In-Network
+P00057,Dr. Hancock,6138612075,Physical Therapy,Southeast,In-Network
+P00058,Dr. Johnson,1024819346,Physical Therapy,Midwest,In-Network
+P00059,Dr. Hughes,6650618091,Cardiology,Mid-Atlantic,In-Network
+P00060,"Richards, Haynes and Jones Clinic",8144914766,Orthopedics,Northeast,In-Network
+P00061,Dr. Short,0728326842,Pediatrics,Midwest,In-Network
+P00062,Dr. Evans,5088210099,Endocrinology,West,In-Network
+P00063,Dr. Long,8143536822,Orthopedics,Midwest,Out-of-Network
+P00064,Dr. White,9431290878,Radiology,Midwest,In-Network
+P00065,Dr. Jones,1413975523,Endocrinology,Northeast,In-Network
+P00066,Dr. Garcia,9135775949,Pediatrics,West,In-Network
+P00067,Dr. Hernandez,9556205336,Endocrinology,West,In-Network
+P00068,Dr. Hill,5257775478,Cardiology,Midwest,In-Network
+P00069,Dr. Rodriguez,9142834110,Endocrinology,Midwest,In-Network
+P00070,Dr. Atkinson,0996930848,Pediatrics,Northeast,In-Network
+P00071,Dr. Shannon,8725639427,OB/GYN,Midwest,Out-of-Network
+P00072,Dr. Mason,1658039282,Cardiology,Midwest,In-Network
+P00073,Dr. Griffin,2992750373,Dermatology,Northeast,In-Network
+P00074,Dr. Brown,5303856770,Radiology,Midwest,In-Network
+P00075,Hooper LLC Clinic,1844989266,Physical Therapy,West,In-Network
+P00076,Dr. Diaz,1846386557,Physical Therapy,Southeast,In-Network
+P00077,Dr. Sparks,9082723184,Primary Care,Northeast,In-Network
+P00078,Hernandez and Sons Clinic,5913651777,OB/GYN,Northeast,In-Network
+P00079,Dr. Clark,2603029922,Pediatrics,Southeast,Out-of-Network
+P00080,Dr. Soto,0920242869,Physical Therapy,Southeast,In-Network
+P00081,"Walsh, Johns and Luna Clinic",4137977236,Behavioral Health,Midwest,In-Network
+P00082,Dr. Burke,9298425799,Pediatrics,Midwest,In-Network
+P00083,Dr. Jones,6621038862,Physical Therapy,Northeast,In-Network
+P00084,Dr. Jacobs,2799088117,Primary Care,Southeast,In-Network
+P00085,Dr. Hopkins,9806865086,Dermatology,West,In-Network
+P00086,Dr. Perez,7659916247,Primary Care,Mid-Atlantic,In-Network
+P00087,Dr. Cannon,1498643009,Radiology,Northeast,In-Network
+P00088,Dr. Mills,8063565126,Cardiology,Midwest,In-Network
+P00089,Dr. Pearson,4486959463,Behavioral Health,Southeast,In-Network
+P00090,Dr. Gutierrez,8725887449,Pediatrics,Northeast,In-Network
+P00091,Dr. Cooper,6213721386,Pediatrics,West,In-Network
+P00092,Dr. Hartman,8902601279,OB/GYN,Northeast,In-Network
+P00093,Dr. Graham,1435190669,Pediatrics,Midwest,Out-of-Network
+P00094,Dr. Douglas,4902770384,Orthopedics,West,In-Network
+P00095,Dr. Lee,9883920530,Cardiology,Midwest,In-Network
+P00096,Dr. Cantrell,1465669380,Endocrinology,West,Out-of-Network
+P00097,Dr. Mclaughlin,1184895543,Pediatrics,Mid-Atlantic,In-Network
+P00098,Dr. Obrien,3769042681,Dermatology,Midwest,In-Network
+P00099,Dr. Hansen,8451848947,Pediatrics,West,In-Network
+P00100,Dr. Church,9735779071,Endocrinology,West,In-Network
+P00101,Dr. Scott,6335658804,Pediatrics,Southeast,In-Network
+P00102,Dr. Wright,1651827553,Orthopedics,Mid-Atlantic,In-Network
+P00103,Dr. Shannon,4237333433,Endocrinology,Northeast,In-Network
+P00104,Dr. Harris,3952111790,Pediatrics,West,Out-of-Network
+P00105,Dr. Duran,8075957947,OB/GYN,Southeast,Out-of-Network
+P00106,Dr. White,8463920867,Primary Care,West,In-Network
+P00107,Dr. Ayers,0856271875,Primary Care,Northeast,In-Network
+P00108,Dr. Norris,0369155942,Orthopedics,Southeast,In-Network
+P00109,Dr. Dunn,3479552763,Primary Care,Southeast,In-Network
+P00110,Dr. Barnes,5564729293,Endocrinology,Midwest,In-Network
+P00111,Dr. Olsen,4386632270,OB/GYN,Mid-Atlantic,In-Network
+P00112,Dr. Thompson,7288574489,Behavioral Health,West,In-Network
+P00113,Dr. Williams,1203471754,Dermatology,Northeast,Out-of-Network
+P00114,Dr. Ward,8845061593,Endocrinology,West,In-Network
+P00115,Dr. Ray,8245587716,Behavioral Health,West,Out-of-Network
+P00116,Dr. Austin,7225699611,Physical Therapy,Mid-Atlantic,Out-of-Network
+P00117,Dr. Martin,3554496475,Endocrinology,West,In-Network
+P00118,Dr. Adkins,8762202341,Behavioral Health,Southeast,In-Network
+P00119,Dr. Clark,6111780068,Cardiology,Mid-Atlantic,Out-of-Network
+P00120,Dr. Hubbard,1149216433,Cardiology,Midwest,In-Network

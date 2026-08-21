@@ -1,0 +1,35 @@
+version: 2
+
+models:
+  - name: stg_members
+    description: One row per member per SCD Type 2 version (plan/region history).
+    columns:
+      - name: member_id
+        tests:
+          - not_null
+      - name: valid_from
+        tests:
+          - not_null
+
+  - name: stg_providers
+    description: One row per credentialed provider, current network status only.
+    columns:
+      - name: provider_id
+        tests:
+          - not_null
+          - unique
+      - name: network_status
+        tests:
+          - accepted_values:
+              values: ['In-Network', 'Out-of-Network']
+
+  - name: stg_claims
+    description: One row per claim line as submitted.
+    columns:
+      - name: claim_id
+        tests:
+          - not_null
+      - name: claim_status
+        tests:
+          - accepted_values:
+              values: ['Paid', 'Denied', 'Pending']

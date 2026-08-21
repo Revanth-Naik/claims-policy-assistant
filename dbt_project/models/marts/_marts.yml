@@ -1,0 +1,56 @@
+version: 2
+
+models:
+  - name: dim_members
+    description: SCD Type 2 member dimension -- one row per member per plan/region version.
+    columns:
+      - name: member_sk
+        tests:
+          - not_null
+          - unique
+      - name: member_id
+        tests:
+          - not_null
+
+  - name: dim_providers
+    description: Provider dimension, current network status.
+    columns:
+      - name: provider_sk
+        tests:
+          - not_null
+          - unique
+      - name: provider_id
+        tests:
+          - not_null
+          - unique
+
+  - name: dim_date
+    description: Date spine covering the claims history.
+    columns:
+      - name: date_day
+        tests:
+          - not_null
+          - unique
+
+  - name: fct_claims
+    description: One row per claim line, at the plan/provider state active on the date of service.
+    columns:
+      - name: claim_id
+        tests:
+          - not_null
+      - name: member_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_members')
+              field: member_id
+      - name: provider_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_providers')
+              field: provider_id
+      - name: claim_status
+        tests:
+          - accepted_values:
+              values: ['Paid', 'Denied', 'Pending']

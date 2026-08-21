@@ -1,0 +1,22 @@
+# Local dev target runs on DuckDB (a file on disk) so the whole pipeline runs
+# with zero cloud credentials. `prod_snowflake` is a ready-to-use template --
+# swap the target and export the SNOWFLAKE_* env vars to point this same
+# project at a real Snowflake account without changing a single model.
+claims_policy_assistant:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: '../warehouse.duckdb'
+      threads: 4
+
+    prod_snowflake:
+      type: snowflake
+      account: "{{ env_var('SNOWFLAKE_ACCOUNT', '') }}"
+      user: "{{ env_var('SNOWFLAKE_USER', '') }}"
+      password: "{{ env_var('SNOWFLAKE_PASSWORD', '') }}"
+      role: "{{ env_var('SNOWFLAKE_ROLE', 'TRANSFORMER') }}"
+      database: CLAIMS_POLICY_ASSISTANT
+      warehouse: "{{ env_var('SNOWFLAKE_WAREHOUSE', 'COMPUTE_WH') }}"
+      schema: analytics
+      threads: 4
