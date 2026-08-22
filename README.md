@@ -67,7 +67,10 @@ Orchestration is modeled two ways:
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
-pip install -r requirements.txt
+
+# requirements.txt = what the app needs to run (also what Streamlit Cloud installs).
+# requirements-pipeline.txt = additionally needed to regenerate data/warehouse/RAG index locally.
+pip install -r requirements.txt -r requirements-pipeline.txt
 
 cp .env.example .env
 # edit .env: set LLM_PROVIDER and the matching API key

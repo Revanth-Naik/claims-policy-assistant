@@ -1,0 +1,11 @@
+# Additional dependencies needed ONLY for local pipeline development --
+# regenerating the synthetic data, running dbt, and rebuilding the RAG index
+# via scripts/run_pipeline.sh. Streamlit Community Cloud never installs
+# this file; it doesn't need to run any of these steps, since the outputs
+# (warehouse.duckdb, rag/vectorstore/) are committed to the repo.
+#
+# Local full setup: pip install -r requirements.txt -r requirements-pipeline.txt
+dbt-core==1.8.8
+dbt-duckdb==1.8.4
+faker==30.8.2
+langchain==0.3.9
